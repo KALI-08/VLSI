@@ -3,7 +3,7 @@
 module not_gate_tb;
   reg x;
   wire y;  
-//instantiate the AND gate module
+//instantiate the NOT gate module
   not_gate notgate(.x(x),.y(y));
 //dump waveform information
   initial begin
