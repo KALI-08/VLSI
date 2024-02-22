@@ -5,7 +5,7 @@
 module or_gate_tb;
   reg a,b;
   wire c;  
-//instantiate the AND gate module
+//instantiate the OR gate module
   or_gate orgate(.a(a),.b(b),.c(c));
 //dump waveform information
   initial begin
