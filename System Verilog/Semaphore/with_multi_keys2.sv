@@ -13,17 +13,25 @@ module semaphore;
     $display("time=%0d After write completed",$time);
     sem.put(7);
   endtask
-  task read;
+  task read_a;
     sem.get(7);
-    $display("time=%0d Before read start",$time);
+    $display("time=%0d Before read_a start",$time);
     #5
-    $display("time=%0d After read completed",$time);
+    $display("time=%0d After read_a completed",$time);
     sem.put(10);
+  endtask
+  task read_b;
+    sem.get(14);
+    $display("time=%0d Before read_b strat",$time);
+    #10
+    $display("time=%0d After read_b completed",$time);
+    sem.put(15);
   endtask
   initial begin
     fork
       write;
-      read;
+      read_a;
+      read_b;
     join
   end
 endmodule
