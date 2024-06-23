@@ -3,14 +3,14 @@
 
 module semaphore;
   task write;
-    $display("Before write start");
+    $display("time=%0d Before write start",$time);
     #5
-    $display("After write completed");
+    $display("time=%0d After write completed",$time);
   endtask
   task read;
-    $display("Before read start");
+    $display("time=%0d Before read start",$time);
     #3
-    $display("After read is completed");
+    $display("time=%0d After read is completed",$time);
   endtask
   initial begin
     fork
