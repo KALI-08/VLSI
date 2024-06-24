@@ -16,7 +16,7 @@ module mail_box;
     mail.get(value);
     $display("get value=%0d",value);
     mail.get(name);
-    $display("put string=%0s",name);
+    $display("get string=%0s",name);
   endtask
   
   initial begin
