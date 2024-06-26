@@ -13,7 +13,7 @@ module unique_if;
     end
     else if(a%2==0) begin
       $display("inside 1st else if block");
-      $display("a is equal to b");
+      $display("a modulo 2 is 0");
     end
    // else begin
       $display("out of statement");
