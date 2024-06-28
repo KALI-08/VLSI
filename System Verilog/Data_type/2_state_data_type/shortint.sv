@@ -1,4 +1,4 @@
-module longint_ex;
+module shortint_ex;
   shortint data;
   initial begin
     $display("before value assign =%0d",data);
