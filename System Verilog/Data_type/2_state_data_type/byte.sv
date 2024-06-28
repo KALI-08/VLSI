@@ -1,4 +1,4 @@
-module bit_ex;
+module byte_ex;
   byte data;
   initial begin
     $display("value of data before assigning = %0d",data);
